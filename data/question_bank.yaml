@@ -1,0 +1,131 @@
+# Question Bank for Adaptive Tutor Agent
+# Structure: topics -> tiers -> list of question templates
+# Template variables: {topic} is replaced at render time
+
+python:
+  beginner:
+    - template: "What is a variable in Python?"
+      answer_keywords: ["variable", "store", "value", "name", "assign"]
+      hint: "Think about how Python stores data."
+    - template: "What does the print() function do in Python?"
+      answer_keywords: ["output", "display", "console", "screen", "print"]
+      hint: "It's used to show something to the user."
+    - template: "Name two basic data types in Python."
+      answer_keywords: ["int", "str", "float", "bool", "integer", "string", "boolean"]
+      hint: "Think about numbers and text."
+  intermediate:
+    - template: "Explain how list comprehensions work in Python."
+      answer_keywords: ["list", "comprehension", "loop", "expression", "iterate", "filter"]
+      hint: "They provide a concise way to create lists."
+    - template: "What is the difference between a list and a tuple in Python?"
+      answer_keywords: ["mutable", "immutable", "list", "tuple", "change", "modify"]
+      hint: "Consider whether you can change them after creation."
+    - template: "How do decorators work in Python?"
+      answer_keywords: ["decorator", "function", "wrap", "modify", "@", "higher-order"]
+      hint: "They modify the behavior of functions."
+  advanced:
+    - template: "Explain Python's Global Interpreter Lock (GIL) and its implications for multi-threading."
+      answer_keywords: ["GIL", "thread", "lock", "CPython", "parallel", "concurrent", "mutex"]
+      hint: "Consider how Python manages memory across threads."
+    - template: "Describe the difference between generators and iterators in Python."
+      answer_keywords: ["generator", "iterator", "yield", "lazy", "next", "__iter__", "__next__"]
+      hint: "Think about memory efficiency and lazy evaluation."
+    - template: "How does Python's memory management and garbage collection work?"
+      answer_keywords: ["reference counting", "garbage collection", "memory", "gc", "cycle", "refcount"]
+      hint: "Python uses reference counting as its primary mechanism."
+
+math:
+  beginner:
+    - template: "What is the order of operations in mathematics?"
+      answer_keywords: ["PEMDAS", "BODMAS", "parentheses", "exponents", "multiply", "divide", "add", "subtract"]
+      hint: "Think of the acronym PEMDAS or BODMAS."
+    - template: "What is a prime number?"
+      answer_keywords: ["prime", "divisible", "one", "itself", "factor", "2"]
+      hint: "It can only be divided by two numbers."
+    - template: "What is the difference between mean, median, and mode?"
+      answer_keywords: ["mean", "average", "median", "middle", "mode", "frequent"]
+      hint: "They are all measures of central tendency."
+  intermediate:
+    - template: "Explain what a derivative represents in calculus."
+      answer_keywords: ["derivative", "rate", "change", "slope", "tangent", "instantaneous"]
+      hint: "Think about how a function changes at a specific point."
+    - template: "What is the Pythagorean theorem and when is it used?"
+      answer_keywords: ["pythagorean", "right triangle", "hypotenuse", "a squared", "b squared", "c squared"]
+      hint: "It relates the sides of a right triangle."
+    - template: "Explain the concept of a mathematical function."
+      answer_keywords: ["function", "input", "output", "map", "relation", "domain", "range"]
+      hint: "Think about how inputs are mapped to outputs."
+  advanced:
+    - template: "Explain the fundamental theorem of calculus."
+      answer_keywords: ["integral", "derivative", "antiderivative", "differentiation", "integration", "inverse"]
+      hint: "It connects differentiation and integration."
+    - template: "What is a eigenvalue and what does it represent geometrically?"
+      answer_keywords: ["eigenvalue", "eigenvector", "matrix", "transform", "scale", "direction", "linear"]
+      hint: "Think about what happens to vectors under a linear transformation."
+    - template: "Describe the concept of convergence in infinite series."
+      answer_keywords: ["convergence", "series", "sum", "limit", "infinite", "diverge", "partial sum"]
+      hint: "Consider whether the sum approaches a finite value."
+
+history:
+  beginner:
+    - template: "In which year did World War II end?"
+      answer_keywords: ["1945", "world war", "WWII", "end", "surrender"]
+      hint: "It ended in the mid-1940s."
+    - template: "What was the Renaissance?"
+      answer_keywords: ["renaissance", "rebirth", "art", "culture", "europe", "middle ages", "revival"]
+      hint: "It was a cultural movement in Europe."
+    - template: "Who was the first President of the United States?"
+      answer_keywords: ["washington", "george", "first", "president"]
+      hint: "He was a general during the American Revolution."
+  intermediate:
+    - template: "What were the main causes of World War I?"
+      answer_keywords: ["assassination", "alliance", "imperialism", "nationalism", "militarism", "archduke", "sarajevo"]
+      hint: "Think of the MAIN acronym: Militarism, Alliances, Imperialism, Nationalism."
+    - template: "Explain the significance of the Magna Carta."
+      answer_keywords: ["magna carta", "rights", "king", "law", "barons", "charter", "1215", "liberty"]
+      hint: "It was a document signed by an English king."
+    - template: "What was the Cold War and what were its main characteristics?"
+      answer_keywords: ["cold war", "usa", "soviet", "ussr", "nuclear", "ideological", "communism", "capitalism"]
+      hint: "It was a geopolitical tension between two superpowers."
+  advanced:
+    - template: "Analyze the long-term economic consequences of the Treaty of Versailles."
+      answer_keywords: ["versailles", "reparations", "germany", "economic", "hyperinflation", "wwii", "depression"]
+      hint: "Consider how the treaty affected Germany's economy and led to future conflict."
+    - template: "How did the Industrial Revolution reshape social class structures in Europe?"
+      answer_keywords: ["industrial", "class", "bourgeoisie", "proletariat", "urbanization", "factory", "middle class"]
+      hint: "Think about how factory work changed who held power and wealth."
+    - template: "Explain the causes and consequences of the decolonization movements after WWII."
+      answer_keywords: ["decolonization", "independence", "colonialism", "nationalism", "africa", "asia", "self-determination"]
+      hint: "Consider how WWII weakened European powers and strengthened independence movements."
+
+science:
+  beginner:
+    - template: "What is the difference between a physical and a chemical change?"
+      answer_keywords: ["physical", "chemical", "change", "substance", "new", "reversible", "composition"]
+      hint: "Think about whether the substance's chemical composition changes."
+    - template: "What is photosynthesis?"
+      answer_keywords: ["photosynthesis", "light", "sunlight", "plant", "glucose", "carbon dioxide", "oxygen", "chlorophyll"]
+      hint: "It's how plants make their food."
+    - template: "What are the three states of matter?"
+      answer_keywords: ["solid", "liquid", "gas", "states", "matter"]
+      hint: "Think about water as ice, water, and steam."
+  intermediate:
+    - template: "Explain Newton's three laws of motion."
+      answer_keywords: ["newton", "inertia", "force", "mass", "acceleration", "action", "reaction", "equal"]
+      hint: "Think about what happens to objects when forces act on them."
+    - template: "What is the structure of a DNA molecule?"
+      answer_keywords: ["dna", "double helix", "base pair", "nucleotide", "adenine", "thymine", "guanine", "cytosine"]
+      hint: "Think about the famous double helix structure."
+    - template: "Explain the concept of natural selection in evolution."
+      answer_keywords: ["natural selection", "evolution", "darwin", "survival", "fittest", "adapt", "trait", "environment"]
+      hint: "Consider how traits that aid survival are passed on."
+  advanced:
+    - template: "Describe the standard model of particle physics."
+      answer_keywords: ["standard model", "quark", "lepton", "boson", "fermion", "higgs", "force", "particle"]
+      hint: "Think about the fundamental particles and forces of the universe."
+    - template: "Explain the second law of thermodynamics and the concept of entropy."
+      answer_keywords: ["thermodynamics", "entropy", "disorder", "energy", "irreversible", "heat", "system"]
+      hint: "Consider how energy naturally disperses over time."
+    - template: "What is CRISPR and how does it work as a gene-editing tool?"
+      answer_keywords: ["crispr", "cas9", "gene", "edit", "dna", "guide rna", "cut", "modify"]
+      hint: "It's a molecular scissors system borrowed from bacteria."
