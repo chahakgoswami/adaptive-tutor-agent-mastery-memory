@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "adaptive-tutor-agent"
+version = "0.1.0"
+description = "Adaptive tutor agent with spaced repetition, difficulty routing, and persistent learner memory"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pyyaml>=6.0",
+    "openai>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+]
+
+[project.scripts]
+tutor-agent = "tutor_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tutor_agent*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--tb=short --cov=tutor_agent --cov-report=term-missing --cov-report=html"
